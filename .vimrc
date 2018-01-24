@@ -25,6 +25,8 @@ let mapleader=" "
 map <leader>s :source ~/.vimrc<CR>
 noremap <leader>r :CommandTFlush<CR>
 autocmd BufWritePre * :%s/\s\+$//e
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
 
 colorscheme afterglow
 set guifont=SourceCodePro+Powerline+Awesome\ Regular:h14
@@ -55,3 +57,10 @@ setlocal noswapfile
 
 set signcolumn=yes
 set splitbelow
+
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+let g:indent_guides_auto_colors = 1
+let g:indent_guides_color_change_percent = 5
+let g:indent_guides_start_level = 2
