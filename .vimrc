@@ -35,7 +35,7 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 
 set list listchars=tab:»·,trail:·,nbsp:·
-
+let g:html_indent_tags = 'li\|p'
 set nojoinspaces
 
 let mapleader=" "
@@ -46,7 +46,7 @@ nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
 
-colorscheme afterglow
+colorscheme nord
 
 set wildignore+=tmp,*.log,*.sql,*.cache
 
@@ -58,8 +58,11 @@ let g:NERDTrimTrailingWhitespace = 1
 
 let NERDTreeMapActivateNode='<right>'
 let g:NERDTreeWinPos = "right"
-let NERDTreeShowHidden=1
-let g:NERDTreeDirArrows=0
+let NERDTreeShowHidden = 1
+let g:NERDTreeDirArrows = 1
+let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
+let g:webdevicons_conceal_nerdtree_brackets = 1
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 autocmd VimEnter * NERDTree
@@ -70,8 +73,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 set signcolumn=yes
 set splitbelow
 set splitright
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
