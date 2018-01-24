@@ -11,11 +11,11 @@ set number
 set wrap
 set smartindent
 set autoindent
-set tabstop=2
+" set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set switchbuf=usetab
-" set expandtab
+set noexpandtab
 " set colorcolumn=90
 set hidden
 set history=50
