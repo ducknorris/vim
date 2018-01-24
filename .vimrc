@@ -2,6 +2,7 @@ set encoding=utf8
 nnoremap R <Esc> " Disable replace mode
 call pathogen#infect()
 au BufEnter * nnoremap R R " Reenable it after entering the buffer
+set ttyfast
 filetype on
 filetype indent on
 filetype plugin on
@@ -42,8 +43,8 @@ let mapleader=" "
 map <leader>s :source ~/.vimrc<CR>
 noremap <leader>r :CommandTFlush<CR>
 autocmd BufWritePre * :%s/\s\+$//e
-nnoremap <C-n> :bnext<CR>
-nnoremap <C-p> :bprevious<CR>
+nnoremap <C-]> :bnext<CR>
+nnoremap <C-[> :bprevious<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
 
 colorscheme nord
