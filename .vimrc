@@ -6,7 +6,7 @@ filetype on
 filetype indent on
 filetype plugin on
 syntax on
-set paste
+" set paste
 set number
 set wrap
 set smartindent
