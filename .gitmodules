@@ -67,3 +67,6 @@
 [submodule "bundle/vim-run-interactive"]
 	path = bundle/vim-run-interactive
 	url = git@github.com:christoomey/vim-run-interactive
+[submodule "bundle/vim-easygrep"]
+	path = bundle/vim-easygrep
+	url = git@github.com:dkprice/vim-easygrep
