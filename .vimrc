@@ -5,7 +5,7 @@ filetype on
 filetype indent on
 filetype plugin on
 syntax on
-" set paste
+set paste
 set number
 set wrap
 set smartindent
@@ -44,7 +44,7 @@ nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp', '\.git']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 let g:airline#extensions#tabline#enabled = 1
