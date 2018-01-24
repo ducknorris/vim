@@ -57,4 +57,3 @@ setlocal noswapfile
 
 set signcolumn=yes
 set splitbelow
-
