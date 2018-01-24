@@ -16,9 +16,9 @@ set shiftwidth=2
 set softtabstop=2
 set switchbuf=usetab
 set expandtab
-set colorcolumn=90
+" set colorcolumn=90
 set hidden
-set history=1000
+set history=50
 set hlsearch
 set showmatch
 set ruler
