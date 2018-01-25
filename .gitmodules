@@ -13,12 +13,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = git@github.com:vim-airline/vim-airline
-[submodule "bundle/vim-airline-themes"]
-	path = bundle/vim-airline-themes
-	url = git@github.com:vim-airline/vim-airline-themes
 [submodule "bundle/vim-better-whitespace"]
 	path = bundle/vim-better-whitespace
 	url = git@github.com:ntpeters/vim-better-whitespace.git
@@ -73,3 +67,6 @@
 [submodule "bundle/nord-vim"]
 	path = bundle/nord-vim
 	url = git@github.com:arcticicestudio/nord-vim
+[submodule "bundle/lightline"]
+	path = bundle/lightline
+	url = git@github.com:itchyny/lightline.vim

@@ -9,7 +9,7 @@ syntax on
 " paste is fucking up supertab plugin
 " set paste
 set number
-set wrap
+set nowrap
 set smartindent
 set autoindent
 " set tabstop=2
@@ -17,9 +17,9 @@ set shiftwidth=2
 set softtabstop=2
 set switchbuf=usetab
 set noexpandtab
-" set colorcolumn=90
+set colorcolumn=90
 set hidden
-set history=50
+set history=1000
 set hlsearch
 set showmatch
 set ruler
@@ -32,6 +32,7 @@ set nobackup
 set nowritebackup
 set laststatus=2
 set mouse=a
+set noshowmode
 
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
@@ -72,11 +73,16 @@ autocmd VimEnter * wincmd p
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp', '\.git']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#branch#enabled = 1
-let g:airline_powerline_fonts = 0
-let g:airline_highlighting_cache=1
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
 
 set signcolumn=yes
 set splitbelow
