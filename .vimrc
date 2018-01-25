@@ -42,8 +42,8 @@ let mapleader=" "
 map <leader>s :source ~/.vimrc<CR>
 noremap <leader>r :CommandTFlush<CR>
 autocmd BufWritePre * :%s/\s\+$//e
-" nnoremap <C-n> :bnext<CR>
-" nnoremap <C-p> :bprev<CR>
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprev<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
 
 colorscheme nord
