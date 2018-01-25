@@ -6,6 +6,7 @@ filetype on
 filetype indent on
 filetype plugin on
 syntax on
+" paste is fucking up supertab plugin
 " set paste
 set number
 set wrap
@@ -30,6 +31,7 @@ set backspace=2
 set nobackup
 set nowritebackup
 set laststatus=2
+set mouse=a
 
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
@@ -42,7 +44,7 @@ let mapleader=" "
 map <leader>s :source ~/.vimrc<CR>
 noremap <leader>r :CommandTFlush<CR>
 autocmd BufWritePre * :%s/\s\+$//e
-nnoremap <C-n> :bnext<CR>
+nnoremap <C-P> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
 
@@ -74,6 +76,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 0
+let g:airline_highlighting_cache=1
 
 set signcolumn=yes
 set splitbelow
