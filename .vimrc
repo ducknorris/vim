@@ -36,6 +36,7 @@ set noshowmode
 
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
+let g:jsx_ext_required = 0
 
 set list listchars=tab:»·,trail:·,nbsp:·
 let g:html_indent_tags = 'li\|p'
@@ -51,7 +52,7 @@ nnoremap <leader>ri :RunInInteractiveShell<space>
 
 colorscheme nord
 
-set wildignore+=tmp,*.log,*.sql,*.cache
+set wildignore+=tmp,*.log,*.sql,*.cache,node_modules,build
 
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1

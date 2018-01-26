@@ -73,3 +73,6 @@
 [submodule "bundle/lightline-bufferline"]
 	path = bundle/lightline-bufferline
 	url = git@github.com:mgee/lightline-bufferline
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = git@github.com:mxw/vim-jsx
