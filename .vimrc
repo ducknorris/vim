@@ -50,6 +50,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 nnoremap <C-o> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
+nmap <silent>t <Plug>(CommandT)
 
 colorscheme nord
 
@@ -97,3 +98,5 @@ set splitbelow
 set splitright
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+let g:buffergator_viewport_split_policy = "T"
