@@ -28,8 +28,9 @@ set incsearch
 set noswapfile
 set backspace=indent,eol,start
 set backspace=2
-set nobackup
-set nowritebackup
+" set nobackup
+" set nowritebackup
+set backupcopy=yes
 set laststatus=2
 set mouse=a
 set noshowmode
@@ -46,7 +47,7 @@ let mapleader=" "
 map <leader>s :source ~/.vimrc<CR>
 noremap <leader>r :CommandTFlush<CR>
 autocmd BufWritePre * :%s/\s\+$//e
-nnoremap <C-P> :bnext<CR>
+nnoremap <C-o> :bnext<CR>
 nnoremap <C-p> :bprev<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
 
