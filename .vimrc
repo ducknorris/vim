@@ -47,8 +47,8 @@ let mapleader=" "
 map <leader>s :source ~/.vimrc<CR>
 noremap <leader>r :CommandTFlush<CR>
 autocmd BufWritePre * :%s/\s\+$//e
-nnoremap <C-o> :bnext<CR>
-nnoremap <C-p> :bprev<CR>
+nnoremap <C-p> :bnext<CR>
+nnoremap <C-o> :bprev<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
 nmap <silent>t <Plug>(CommandT)
 
