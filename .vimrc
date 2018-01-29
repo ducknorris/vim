@@ -12,11 +12,7 @@ set number
 set nowrap
 set smartindent
 set autoindent
-" set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set switchbuf=usetab
-set noexpandtab
+set tabstop=2 shiftwidth=2 expandtab
 set colorcolumn=90
 set hidden
 set history=1000
@@ -100,3 +96,5 @@ set splitright
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 let g:buffergator_viewport_split_policy = "T"
+
+let g:EasyGrepWindowPosition = 'botright'
