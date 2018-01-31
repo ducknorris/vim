@@ -31,6 +31,8 @@ set laststatus=2
 set mouse=a
 set noshowmode
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 let g:jsx_ext_required = 0
@@ -41,12 +43,10 @@ set nojoinspaces
 
 let mapleader=" "
 map <leader>s :source ~/.vimrc<CR>
-noremap <leader>r :CommandTFlush<CR>
 autocmd BufWritePre * :%s/\s\+$//e
 nnoremap <C-p> :bnext<CR>
 nnoremap <C-o> :bprev<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
-nmap <silent>t <Plug>(CommandT)
 
 colorscheme nord
 
