@@ -44,8 +44,6 @@ set nojoinspaces
 let mapleader=" "
 map <leader>s :source ~/.vimrc<CR>
 autocmd BufWritePre * :%s/\s\+$//e
-nnoremap <C-p> :bnext<CR>
-nnoremap <C-o> :bprev<CR>
 nnoremap <leader>ri :RunInInteractiveShell<space>
 
 colorscheme nord
